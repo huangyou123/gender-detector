@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘彝乡 - 彝族文化数字博物馆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 添加过渡效果 */
+        .content-transition {
+            height: 20px;
+            background: linear-gradient(to bottom, #d62c1a, #fff8e6);
+        }
+        .footer-transition {
+            height: 20px;
+            background: linear-gradient(to top, #d62c1a, #fff8e6);
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 - 红色背景 -->
+    <header class="yi-header">
+        <div class="container">
+            <div class="logo">
+                <h1>神秘彝乡</h1>
+                <p>彝族文化数字博物馆</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="history.html"><i class="fas fa-landmark"></i> 彝族历史</a></li>
+                    <li><a href="costume.html"><i class="fas fa-tshirt"></i> 服饰文化</a></li>
+                    <li><a href="festival.html"><i class="fas fa-fire"></i> 火把节</a></li>
+                    <li><a href="language.html"><i class="fas fa-language"></i> 彝文彝语</a></li>
+                    <li><a href="craft.html"><i class="fas fa-paint-brush"></i> 传统工艺</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 顶部到内容的过渡 -->
+    <div class="content-transition"></div>
+
+    <!-- 主视觉轮播图 -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('images/hero1.jpg');">
+                <div class="slide-content">
+                    <h2>彝族火把节</h2>
+                    <p>东方狂欢节，彝族文化的璀璨明珠</p>
+                    <a href="festival.html" class="btn">了解更多</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero2.jpg');">
+                <div class="slide-content">
+                    <h2>绚丽彝族服饰</h2>
+                    <p>穿在身上的史诗，色彩斑斓的民族记忆</p>
+                    <a href="costume.html" class="btn">了解更多</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero3.jpg');">
+                <div class="slide-content">
+                    <h2>古老彝文</h2>
+                    <p>中国六大古文字之一，活着的文字化石</p>
+                    <a href="language.html" class="btn">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- 特色文化展示 -->
+    <section class="feature-section">
+        <div class="container">
+            <h2 class="section-title"><span>彝族文化精粹</span></h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>彝族建筑</h3>
+                    <p>土掌房、垛木房等独特民居，与自然和谐共处</p>
+                    <a href="#" class="read-more">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>彝族美食</h3>
+                    <p>砣砣肉、荞麦饼、酸菜汤等特色饮食文化</p>
+                    <a href="#" class="read-more">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>彝族音乐</h3>
+                    <p>口弦、月琴、三弦等乐器与特色民歌</p>
+                    <a href="#" class="read-more">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>彝族文学</h3>
+                    <p>《梅葛》《查姆》《阿诗玛》等史诗</p>
+                    <a href="#" class="read-more">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+    <div class="container">
+        <h2 class="section-title"><span>彝族文化视频</span></h2>
+        <div class="video-container">
+            <div class="video-card">
+                <div class="video-thumbnail" data-video-url=" https://v.douyin.com/udXLG2nrptg/">
+                    <img src="images/video1-thumb.jpg" alt="火把节盛况">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                </div>
+                <h3>火把节盛况</h3>
+            </div>
+            <div class="video-card">
+                <div class="video-thumbnail" data-video-url=" https://v.douyin.com/IZiw1Ruu8PM/ ">
+                    <img src="images/video2-thumb.jpg" alt="彝族服饰制作">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                </div>
+                <h3>彝族服饰制作</h3>
+            </div>
+            <div class="video-card">
+                <div class="video-thumbnail" data-video-url=" https://v.douyin.com/Bvf-ALH9aBs/ ">
+                    <img src="images/video3-thumb.jpg" alt="彝族歌舞表演">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                </div>
+                <h3>彝族歌舞表演</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- 内容到底部的过渡 -->
+    <div class="footer-transition"></div>
+
+    <!-- 页脚 - 红色背景 -->
+    <footer class="yi-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>关于神秘彝乡</h3>
+                    <p>致力于保护和传播彝族传统文化，打造数字时代的民族文化传承平台。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="history.html">彝族历史</a></li>
+                        <li><a href="costume.html">服饰文化</a></li>
+                        <li><a href="festival.html">火把节</a></li>
+                        <li><a href="language.html">彝文彝语</a></li>
+                        <li><a href="craft.html">传统工艺</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-envelope"></i> yizu@mystic-yi.com</p>
+                    <p><i class="fas fa-phone"></i> 123-4567-8910</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 云南省大理白族自治州</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 神秘彝乡 - 彝族文化数字博物馆. 保留所有权利.</p>
+                <p>网站设计：郑永祺 231820287</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

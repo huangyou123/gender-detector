@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族服饰 - 神秘彝乡</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .costume-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .costume-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .costume-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .costume-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .costume-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .costume-card:hover .costume-image img {
+            transform: scale(1.05);
+        }
+        
+        .costume-info {
+            padding: 20px;
+        }
+        
+        .costume-info h3 {
+            color: var(--yi-red);
+            margin-top: 0;
+        }
+        
+        .costume-intro {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="yi-header">
+        <div class="container">
+            <div class="logo">
+                <h1>神秘彝乡</h1>
+                <p>彝族文化数字博物馆</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="history.html"><i class="fas fa-landmark"></i> 彝族历史</a></li>
+                    <li><a href="costume.html" class="active"><i class="fas fa-tshirt"></i> 服饰文化</a></li>
+                    <li><a href="festival.html"><i class="fas fa-fire"></i> 火把节</a></li>
+                    <li><a href="language.html"><i class="fas fa-language"></i> 彝文彝语</a></li>
+                    <li><a href="craft.html"><i class="fas fa-paint-brush"></i> 传统工艺</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>彝族服饰文化</h1>
+            <p>穿在身上的史诗，色彩斑斓的民族记忆</p>
+        </div>
+    </section>
+
+    <!-- 服饰内容 -->
+    <section class="costume-content">
+        <div class="container">
+            <div class="costume-intro">
+                <h2>彝族服饰概述</h2>
+                <p>彝族服饰被誉为"穿在身上的史诗"，是彝族文化的重要载体。彝族服饰种类繁多，不同地区、不同支系的服饰各具特色，但都以黑色为基调，配以红、黄、蓝等鲜艳色彩，形成独特的民族风格。</p>
+                <p>彝族服饰不仅具有实用功能，更是身份地位、年龄婚姻状况的标志，蕴含着丰富的文化内涵和审美价值。彝族妇女从小学习刺绣、挑花等技艺，将民族的历史、传说、信仰等通过服饰图案表现出来。</p>
+            </div>
+            
+            <h2 class="section-title"><span>服饰类型展示</span></h2>
+            
+            <div class="costume-gallery">
+                <div class="costume-card">
+                    <div class="costume-image">
+                        <img src="images/costume1.jpg" alt="凉山彝族服饰">
+                    </div>
+                    <div class="costume-info">
+                        <h3>凉山彝族服饰</h3>
+                        <p>凉山彝族服饰以黑色为基调，男子多穿黑色窄袖右衽上衣和宽大长裤，女子则穿百褶裙和绣花上衣，头戴黑色头帕。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card">
+                    <div class="costume-image">
+                        <img src="images/costume2.jpg" alt="楚雄彝族服饰">
+                    </div>
+                    <div class="costume-info">
+                        <h3>楚雄彝族服饰</h3>
+                        <p>楚雄彝族服饰色彩鲜艳，女子多穿绣花上衣和长裤，腰间系绣花围腰，头戴绣花帽，整体风格明快活泼。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card">
+                    <div class="costume-image">
+                        <img src="images/costume3.jpg" alt="红河彝族服饰">
+                    </div>
+                    <div class="costume-info">
+                        <h3>红河彝族服饰</h3>
+                        <p>红河彝族服饰以银饰著称，女子盛装时佩戴大量银饰，包括银冠、银项圈、银手镯等，显得华丽庄重。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card">
+                    <div class="costume-image">
+                        <img src="images/costume4.jpg" alt="彝族儿童服饰">
+                    </div>
+                    <div class="costume-info">
+                        <h3>彝族儿童服饰</h3>
+                        <p>彝族儿童服饰色彩鲜艳，多采用动物图案和吉祥纹样，寄托了长辈对孩子的美好祝愿。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card">
+                    <div class="costume-image">
+                        <img src="images/costume5.jpg" alt="彝族婚礼服饰">
+                    </div>
+                    <div class="costume-info">
+                        <h3>彝族婚礼服饰</h3>
+                        <p>彝族婚礼服饰最为华丽，新娘通常穿着绣满花纹的衣裙，佩戴大量银饰，新郎则穿着崭新的传统服装。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card">
+                    <div class="costume-image">
+                        <img src="images/costume6.jpg" alt="彝族老年服饰">
+                    </div>
+                    <div class="costume-info">
+                        <h3>彝族老年服饰</h3>
+                        <p>彝族老年人服饰相对朴素，但仍保留传统元素，体现了彝族尊老敬老的传统美德。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="yi-footer">
+        <!-- 保持与首页相同的页脚 -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

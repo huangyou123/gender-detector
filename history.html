@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族历史 - 神秘彝乡</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .history-timeline {
+            margin: 40px 0;
+            position: relative;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .timeline-year {
+            width: 120px;
+            font-weight: bold;
+            color: var(--yi-red);
+            text-align: right;
+            padding-right: 30px;
+            position: relative;
+        }
+        
+        .timeline-year::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background-color: var(--yi-red);
+            border-radius: 50%;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            padding-left: 30px;
+            border-left: 2px solid var(--yi-red);
+            padding-bottom: 20px;
+        }
+        
+        .timeline-content h3 {
+            margin-top: 0;
+            color: var(--yi-red);
+        }
+        
+        .history-intro {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="yi-header">
+        <div class="container">
+            <div class="logo">
+                <h1>神秘彝乡</h1>
+                <p>彝族文化数字博物馆</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="history.html" class="active"><i class="fas fa-landmark"></i> 彝族历史</a></li>
+                    <li><a href="costume.html"><i class="fas fa-tshirt"></i> 服饰文化</a></li>
+                    <li><a href="festival.html"><i class="fas fa-fire"></i> 火把节</a></li>
+                    <li><a href="language.html"><i class="fas fa-language"></i> 彝文彝语</a></li>
+                    <li><a href="craft.html"><i class="fas fa-paint-brush"></i> 传统工艺</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>彝族历史沿革</h1>
+            <p>探索彝族从古至今的发展历程与文化传承</p>
+        </div>
+    </section>
+
+    <!-- 历史内容 -->
+    <section class="history-content">
+        <div class="container">
+            <div class="history-intro">
+                <h2>彝族历史概述</h2>
+                <p>彝族是中国最古老的民族之一，有着悠久的历史和灿烂的文化。彝族主要分布在云南、四川、贵州、广西等省区，人口约900万。彝族自称"诺苏"、"纳苏"、"聂苏"等，意为"黑族"或"崇尚黑色的民族"。</p>
+                <p>彝族历史悠久，可以追溯到远古时期。据考古发现，彝族先民早在旧石器时代晚期就已在西南地区活动。彝族与古羌人有渊源关系，是古羌人南下在长期发展过程中与西南土著部落不断融合而形成的民族。</p>
+            </div>
+            
+            <div class="history-timeline">
+                <h2 class="section-title"><span>历史大事记</span></h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">先秦时期</div>
+                    <div class="timeline-content">
+                        <h3>彝族先民活动</h3>
+                        <p>彝族先民属于古羌人系统，早在先秦时期就已在西南地区活动，与当地土著民族融合，形成了早期的彝族部落。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">西汉时期</div>
+                    <div class="timeline-content">
+                        <h3>西南夷的记载</h3>
+                        <p>司马迁《史记·西南夷列传》中已有关于彝族先民的记载，当时被称为"西南夷"。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">唐代</div>
+                    <div class="timeline-content">
+                        <h3>南诏国的建立</h3>
+                        <p>彝族先民参与建立了南诏国(738-902年)，这是彝族历史上的重要时期，南诏文化对彝族文化发展产生了深远影响。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">明清时期</div>
+                    <div class="timeline-content">
+                        <h3>土司制度的兴衰</h3>
+                        <p>明清时期在彝族地区实行土司制度，彝族社会形成了独特的等级制度和文化传统。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1956年</div>
+                    <div class="timeline-content">
+                        <h3>凉山彝族自治州成立</h3>
+                        <p>中国第一个彝族自治州——凉山彝族自治州成立，标志着彝族地区实现了民族区域自治。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="yi-footer">
+        <!-- 保持与首页相同的页脚 -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族传统工艺 - 神秘彝乡</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .craft-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .craft-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .craft-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .craft-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .craft-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .craft-card:hover .craft-image img {
+            transform: scale(1.05);
+        }
+        
+        .craft-info {
+            padding: 20px;
+        }
+        
+        .craft-info h3 {
+            color: var(--yi-red);
+            margin-top: 0;
+        }
+        
+        .craft-intro {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .process-steps {
+            margin: 30px 0;
+        }
+        
+        .process-step {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--yi-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="yi-header">
+        <div class="container">
+            <div class="logo">
+                <h1>神秘彝乡</h1>
+                <p>彝族文化数字博物馆</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="history.html"><i class="fas fa-landmark"></i> 彝族历史</a></li>
+                    <li><a href="costume.html"><i class="fas fa-tshirt"></i> 服饰文化</a></li>
+                    <li><a href="festival.html"><i class="fas fa-fire"></i> 火把节</a></li>
+                    <li><a href="language.html"><i class="fas fa-language"></i> 彝文彝语</a></li>
+                    <li><a href="craft.html" class="active"><i class="fas fa-paint-brush"></i> 传统工艺</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>彝族传统工艺</h1>
+            <p>匠心传承，彝族智慧的结晶</p>
+        </div>
+    </section>
+
+    <!-- 传统工艺内容 -->
+    <section class="craft-content">
+        <div class="container">
+            <div class="craft-intro">
+                <h2>彝族传统工艺概述</h2>
+                <p>彝族传统工艺种类繁多，技艺精湛，是彝族人民在长期生产生活中创造的宝贵文化遗产。这些工艺既具有实用价值，又蕴含丰富的文化内涵和审美价值，体现了彝族人民的智慧和创造力。</p>
+                <p>彝族传统工艺主要包括漆器制作、银饰加工、纺织刺绣、木器制作、竹编等，其中不少已被列入国家级非物质文化遗产名录。</p>
+            </div>
+            
+            <h2 class="section-title"><span>工艺精品展示</span></h2>
+            
+            <div class="craft-gallery">
+                <div class="craft-card">
+                    <div class="craft-image">
+                        <img src="images/craft1.jpg" alt="彝族漆器">
+                    </div>
+                    <div class="craft-info">
+                        <h3>彝族漆器</h3>
+                        <p>彝族漆器以红、黄、黑三色为主，图案多取材于自然和生活，具有浓郁的彝族特色。漆器制作工艺复杂，需经过数十道工序。</p>
+                    </div>
+                </div>
+                
+                <div class="craft-card">
+                    <div class="craft-image">
+                        <img src="images/craft2.jpg" alt="彝族银饰">
+                    </div>
+                    <div class="craft-info">
+                        <h3>彝族银饰</h3>
+                        <p>彝族银饰工艺精湛，种类繁多，包括头饰、耳环、项链、手镯等。银饰上的图案多反映彝族的神话传说和自然崇拜。</p>
+                    </div>
+                </div>
+                
+                <div class="craft-card">
+                    <div class="craft-image">
+                        <img src="images/craft3.jpg" alt="彝族刺绣">
+                    </div>
+                    <div class="craft-info">
+                        <h3>彝族刺绣</h3>
+                        <p>彝族刺绣色彩鲜艳，图案丰富，常用于服饰装饰。不同地区的刺绣风格各异，是彝族妇女智慧和审美的体现。</p>
+                    </div>
+                </div>
+                
+                <div class="craft-card">
+                    <div class="craft-image">
+                        <img src="images/craft4.jpg" alt="彝族木器">
+                    </div>
+                    <div class="craft-info">
+                        <h3>彝族木器</h3>
+                        <p>彝族木器制作工艺独特，包括家具、餐具、乐器等。木器上常雕刻有彝族传统图案，具有实用和艺术双重价值。</p>
+                    </div>
+                </div>
+                
+                <div class="craft-card">
+                    <div class="craft-image">
+                        <img src="images/craft5.jpg" alt="彝族竹编">
+                    </div>
+                    <div class="craft-info">
+                        <h3>彝族竹编</h3>
+                        <p>彝族竹编工艺精湛，产品包括背篓、筛子、簸箕等生产生活用具，以及各种装饰品，体现了彝族人民与自然的和谐关系。</p>
+                    </div>
+                </div>
+                
+                <div class="craft-card">
+                    <div class="craft-image">
+                        <img src="images/craft6.jpg" alt="彝族土陶">
+                    </div>
+                    <div class="craft-info">
+                        <h3>彝族土陶</h3>
+                        <p>彝族土陶制作历史悠久，产品包括炊具、酒具、祭祀用品等。土陶制作保留了原始的手工制作方法，具有独特的艺术风格。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="craft-intro">
+                <h2>漆器制作工艺</h2>
+                <p>彝族漆器是最具代表性的传统工艺之一，其制作过程复杂而精细：</p>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>选材</h3>
+                            <p>选用优质木材，如桦木、樟木等，经过干燥处理后制成坯胎。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>上底漆</h3>
+                            <p>在坯胎上涂抹生漆作为底漆，待其干燥后打磨平整。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>绘制图案</h3>
+                            <p>用特制工具在漆面上绘制传统图案，常见的有日月星辰、花鸟虫鱼等。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>填色</h3>
+                            <p>用红、黄、黑三色漆填充图案，每种颜色需单独上漆并干燥。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>抛光</h3>
+                            <p>最后对漆器表面进行抛光处理，使其光亮如镜。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>一件精美的彝族漆器需要经过数十道工序，耗时数月甚至数年才能完成，体现了彝族工匠的耐心和技艺。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="yi-footer">
+        <!-- 保持与首页相同的页脚 -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
